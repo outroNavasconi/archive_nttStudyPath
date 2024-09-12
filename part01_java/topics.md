@@ -1,0 +1,22 @@
+# Tópicos do Módulo
+
+- [x] Tipos Primitivos
+- [ ] Controles de Fluxo
+- [ ] Arrays e Listas
+- [ ] Entrada de Dados
+- [ ] Exercício 01
+- [ ] Classes
+- [ ] Orientação a Objetos
+- [ ] Interface
+- [ ] Introdução BD
+- [ ] JDBC
+- [ ] Exercício 02
+- [ ] Threads
+- [ ] Spring Boot
+- [x] ORM
+- [ ] Verbos HTTP
+- [ ] API REST
+- [ ] JSON
+- [ ] MVC
+- [ ] App Spring Boot
+- [ ] Exercício 03
