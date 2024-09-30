@@ -33,7 +33,7 @@ Sumário:
 **Indicação de Material de Estudo: [Aqui](https://www.youtube.com/watch?v=FF1f4bKYhoo&list=PLbEOwbQR9lqzK14I7OOeREEIE4k6rjgIj)**  
 *Tempo Aprox: 02h43m22s*
 
-- [ ] O que é git? - O que é GitHub? Porquê aprender git?
+- [X] O que é git? - O que é GitHub? Porquê aprender git?
 - [ ] Como instalar e configurar o GIT no windows
 - [ ] Comandos básicos (init status add commit log)
 - [ ] Rastreando e recuperando versões anteriores do projeto (checkout)
