@@ -34,8 +34,8 @@ Sumário:
 *Tempo Aprox: 02h43m22s*
 
 - [X] O que é git? - O que é GitHub? Porquê aprender git?
-- [ ] Como instalar e configurar o GIT no windows
-- [ ] Comandos básicos (init status add commit log)
+- [X] Como instalar e configurar o GIT no windows
+- [X] Comandos básicos (init status add commit log)
 - [ ] Rastreando e recuperando versões anteriores do projeto (checkout)
 - [ ] Criando ramificações do projeto (branch e merge) e resolução de conflitos
 - [ ] Enviando um projeto local para o GITHUB
