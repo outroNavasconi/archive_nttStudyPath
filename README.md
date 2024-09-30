@@ -36,7 +36,7 @@ Sumário:
 - [X] O que é git? - O que é GitHub? Porquê aprender git?
 - [X] Como instalar e configurar o GIT no windows
 - [X] Comandos básicos (init status add commit log)
-- [ ] Rastreando e recuperando versões anteriores do projeto (checkout)
+- [X] Rastreando e recuperando versões anteriores do projeto (checkout)
 - [ ] Criando ramificações do projeto (branch e merge) e resolução de conflitos
 - [ ] Enviando um projeto local para o GITHUB
 - [ ] Como criar um repositório no GITHUB e clonar no Windows

@@ -59,4 +59,20 @@ direction LR
   C-->U: "git rm [file]"
 ```
 
-O comando `git log` exibe o histórico de commits dentro do repositório.
+O comando `git log` exibe o histórico de commits dentro do repositório. Algumas variações incluem: `git log --graph`, `git log --online`, `git log --oneline --graph`.
+
+## Rastreando e recuperando versões anteriores do projeto (checkout)
+
+O `HEAD` - como no exemplo abaixo de uma saída do comando log - indica a versão atual do projeto. Ou seja, a versão atual do projeto é a `f5e0335`.
+
+>
+> **f5e0335** (**HEAD** -> **feature/git_github**) comandos básicos (init, status, add, commit, log)  
+> **5e8579f** como instalar e configurar o git no windows  
+> **e9a98d8** (**origin/main**, **origin/HEAD**, **main**) reestruturação do plano de estudo`  
+> **c09888a** initial commit  
+> **6614979** Initial commit
+>
+
+Ao realizar uma instrução como `git checkout [hash do commit]` o projeto restaura para a versão anterior. Por exemplo, ao realizar `git checkout 5e8579f`, todas as modificações serão restauradas para a versão indicada pelo hash. Essa restauração não é permanente, então, para retornar para a versão mais recente basta realizar um novo checkout para a branch desejada. Para restaurar de forma permanente algum commit, o comando `git restore --hard [hash do commit]` pode ser usado.
+
+O comando `git diif` exibe as diferenças entre os arquivos atuais com os arquivos da versão apontada pelo `HEAD`.
