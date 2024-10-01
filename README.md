@@ -44,7 +44,7 @@ Materiais de estudo sobre DevOps.
 - [X] Como criar um repositório no GITHUB e clonar no Windows
 - [X] Instalando o GIT no Linux - Clonando repositórios do GITHUB
 - [X] Criar e editar arquivos e pastas direto no GITHUB - sincronizando alterações
-- [ ] Trabalhando um projeto em vários repositórios locais - Resolvendo conflitos
+- [X] Trabalhando um projeto em vários repositórios locais - Resolvendo conflitos
 - [ ] Usando o GITHUB como portfólio e currículo
 - [ ] Personalizando o README.md com markdown (inserir gif, vídeo, etc)
 - [ ] KANBAN - Gerenciando projetos (aba Projects) com o ferramenta nativa.
