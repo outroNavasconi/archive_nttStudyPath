@@ -4,7 +4,7 @@ Materiais de estudo sobre DevOps.
 
 ## Sumário
 
-- [ ] Git e GitHub
+- [X] Git e GitHub
 - [ ] Gerenciamento de Dependências e Build com Maven
 - [ ] Java
 - [ ] JPA 1
@@ -50,7 +50,7 @@ Materiais de estudo sobre DevOps.
 - [X] Personalizando o README.md com markdown (inserir gif, vídeo, etc)
 - [X] KANBAN - Gerenciando projetos (aba Projects) com o ferramenta nativa.
 - [X] Selos dinâmicos de metadados usando shields.io
-- [ ] Como hospedar GRATUITAMENTE um site no GITHUB
+- [X] Como hospedar GRATUITAMENTE um site no GITHUB
 
 ## Gerenciamento de Dependências e Build com Maven
 
