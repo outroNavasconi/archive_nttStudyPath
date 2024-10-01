@@ -59,7 +59,7 @@ direction LR
   C-->U: "git rm [file]"
 ```
 
-O comando `git log` exibe o histórico de commits dentro do repositório. Algumas variações incluem: `git log --graph`, `git log --online`, `git log --oneline --graph`.
+O comando `git log` exibe o histórico de commits dentro do repositório. Algumas variações incluem: `git log --graph`, `git log --pretty=oneline`.
 
 ## Rastreando e recuperando versões anteriores do projeto (checkout)
 
@@ -76,3 +76,36 @@ O `HEAD` - como no exemplo abaixo de uma saída do comando log - indica a versã
 Ao realizar uma instrução como `git checkout [hash do commit]` o projeto restaura para a versão anterior. Por exemplo, ao realizar `git checkout 5e8579f`, todas as modificações serão restauradas para a versão indicada pelo hash. Essa restauração não é permanente, então, para retornar para a versão mais recente basta realizar um novo checkout para a branch desejada. Para restaurar de forma permanente algum commit, o comando `git restore --hard [hash do commit]` pode ser usado.
 
 O comando `git diif` exibe as diferenças entre os arquivos atuais com os arquivos da versão apontada pelo `HEAD`.
+
+## Criando ramificações do projeto (branch e merge) e resolução de conflitos
+
+Para criar uma ramificação de uma branch, o comando `git checkout -b [nome da branch]` pode ser usado. Ele serve como um atalho para `git branch [nome da branch]` e `git checkout [nome da branch]`. Ramificações são úteis para trabalhar em modificações no código fonte do projeto sem alterar uma versão estável, por exemplo.  
+
+Conflitos acontecem quando arquivos são modificados em duas branchs diferentes. Como existem duas versões do mesmo arquivo, o GIT acusa um conflito, sendo de responsabilidade do desenvolvedor realizar as alterações necessárias no arquivo para solucionar o conflito. O exemplo abaixo mostra um cenário de conflito. A branch `main` foi ramificada pela branch `feature` e qualquer arquivo que contenha modificações diferentes entre as branchs resultará em um conflito.
+
+```mermaid
+gitGraph
+  commit
+  commit
+  commit
+  branch feature
+  checkout feature
+  commit
+  commit
+  checkout main
+  commit
+```
+
+Os conflitos podem ser resolvidos realizando um merge entre as branchs. Por exemplo, no exemplo acima, o objetivo é fazer um merge da branch `feature` para a branch `main`, portanto, estando na `main`, o comando seria `git merge feature`. Os conflitos seriam marcados da seguinte forma:
+
+```text
+<<<<<<<< HEAD
+System.out.println("olá mundo");
+========
+System.out.println("Acabou Chorare");
+>>>>>>>> feature
+```
+
+Onde o texto abaixo de `HEAD` indica qual é o texto da branch atual e o texto abaixo de `=` indica qual é a modificação proveniente da outra branch. É possível apagar qual modificação deseja-se excluir ou, ainda, manter as duas modificações.  
+
+Após realizado a solução do conflito, basta realizar um `git add` seguido de um `git commit`. Se for para abortar o merge, basta executar o comando `git merge --abort`.
