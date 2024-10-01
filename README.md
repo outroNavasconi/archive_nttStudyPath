@@ -46,7 +46,7 @@ Materiais de estudo sobre DevOps.
 - [X] Criar e editar arquivos e pastas direto no GITHUB - sincronizando alterações
 - [X] Trabalhando um projeto em vários repositórios locais - Resolvendo conflitos
 - [X] Fork e Pull Request - Exemplo simples e prático
-- [ ] Usando o GITHUB como portfólio e currículo
+- [X] Usando o GITHUB como portfólio e currículo
 - [ ] Personalizando o README.md com markdown (inserir gif, vídeo, etc)
 - [ ] KANBAN - Gerenciando projetos (aba Projects) com o ferramenta nativa.
 - [ ] Selos dinâmicos de metadados usando shields.io
