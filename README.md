@@ -1,9 +1,10 @@
 # archive_nttStudyPath
 
 Materiais de estudo sobre DevOps.  
-Sumário:  
 
-- [ ] Git e GitHub
+## Sumário
+
+- [X] Git e GitHub
 - [ ] Gerenciamento de Dependências e Build com Maven
 - [ ] Java
 - [ ] JPA 1
@@ -33,22 +34,23 @@ Sumário:
 **Indicação de Material de Estudo: [Aqui](https://www.youtube.com/watch?v=FF1f4bKYhoo&list=PLbEOwbQR9lqzK14I7OOeREEIE4k6rjgIj)**  
 *Tempo Aprox: 02h43m22s*
 
-- [ ] O que é git? - O que é GitHub? Porquê aprender git?
-- [ ] Como instalar e configurar o GIT no windows
-- [ ] Comandos básicos (init status add commit log)
-- [ ] Rastreando e recuperando versões anteriores do projeto (checkout)
-- [ ] Criando ramificações do projeto (branch e merge) e resolução de conflitos
-- [ ] Enviando um projeto local para o GITHUB
-- [ ] Como criar um repositório no GITHUB e clonar no Windows
-- [ ] Instalando o GIT no Linux - Clonando repositórios do GITHUB - Aula 8
-- [ ] Criar e editar arquivos e pastas direto no GITHUB - sincronizando alterações
-- [ ] Trabalhando um projeto em vários repositórios locais - Resolvendo conflitos
-- [ ] Usando o GITHUB como portfólio e currículo
-- [ ] Personalizando o README.md com markdown (inserir gif, vídeo, etc)
-- [ ] KANBAN - Gerenciando projetos (aba Projects) com o ferramenta nativa.
-- [ ] Fork e Pull Request - Exemplo simples e prático
-- [ ] Selos dinâmicos de metadados usando shields.io
-- [ ] Como hospedar GRATUITAMENTE um site no GITHUB
+- [X] O que é git? - O que é GitHub? Porquê aprender git?
+- [X] Como instalar e configurar o GIT no windows
+- [X] Comandos básicos (init status add commit log)
+- [X] Rastreando e recuperando versões anteriores do projeto (checkout)
+- [X] Criando ramificações do projeto (branch e merge) e resolução de conflitos
+- [X] Enviando um projeto local para o GITHUB
+- [X] Resolvendo problemas de autenticação (error 403) e criação de token no gitHub
+- [X] Como criar um repositório no GITHUB e clonar no Windows
+- [X] Instalando o GIT no Linux - Clonando repositórios do GITHUB
+- [X] Criar e editar arquivos e pastas direto no GITHUB - sincronizando alterações
+- [X] Trabalhando um projeto em vários repositórios locais - Resolvendo conflitos
+- [X] Fork e Pull Request - Exemplo simples e prático
+- [X] Usando o GITHUB como portfólio e currículo
+- [X] Personalizando o README.md com markdown (inserir gif, vídeo, etc)
+- [X] KANBAN - Gerenciando projetos (aba Projects) com o ferramenta nativa.
+- [X] Selos dinâmicos de metadados usando shields.io
+- [X] Como hospedar GRATUITAMENTE um site no GITHUB
 
 ## Gerenciamento de Dependências e Build com Maven
 
