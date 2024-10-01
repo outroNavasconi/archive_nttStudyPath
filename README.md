@@ -43,7 +43,7 @@ Materiais de estudo sobre DevOps.
 - [X] Resolvendo problemas de autenticação (error 403) e criação de token no gitHub
 - [X] Como criar um repositório no GITHUB e clonar no Windows
 - [X] Instalando o GIT no Linux - Clonando repositórios do GITHUB
-- [ ] Criar e editar arquivos e pastas direto no GITHUB - sincronizando alterações
+- [X] Criar e editar arquivos e pastas direto no GITHUB - sincronizando alterações
 - [ ] Trabalhando um projeto em vários repositórios locais - Resolvendo conflitos
 - [ ] Usando o GITHUB como portfólio e currículo
 - [ ] Personalizando o README.md com markdown (inserir gif, vídeo, etc)
