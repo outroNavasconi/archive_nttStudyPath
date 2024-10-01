@@ -40,6 +40,7 @@ Materiais de estudo sobre DevOps.
 - [X] Rastreando e recuperando versões anteriores do projeto (checkout)
 - [X] Criando ramificações do projeto (branch e merge) e resolução de conflitos
 - [X] Enviando um projeto local para o GITHUB
+- [X] Resolvendo problemas de autenticação (error 403) e criação de token no gitHub
 - [X] Como criar um repositório no GITHUB e clonar no Windows
 - [ ] Instalando o GIT no Linux - Clonando repositórios do GITHUB - Aula 8
 - [ ] Criar e editar arquivos e pastas direto no GITHUB - sincronizando alterações

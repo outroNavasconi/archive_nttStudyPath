@@ -121,3 +121,7 @@ git commit -m "first commit"
 git remote add origin https://github.com/[user domain]/[repo name].git
 git push -u origin main
 ```
+
+## Como criar um repositório no GITHUB e clonar no Windows
+
+Após a criação do repositório no GitHub, para clonar na máquina local é preciso executar o comando `git clone [url do repo]`.
