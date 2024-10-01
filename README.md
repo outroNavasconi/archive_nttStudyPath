@@ -42,7 +42,7 @@ Materiais de estudo sobre DevOps.
 - [X] Enviando um projeto local para o GITHUB
 - [X] Resolvendo problemas de autenticação (error 403) e criação de token no gitHub
 - [X] Como criar um repositório no GITHUB e clonar no Windows
-- [ ] Instalando o GIT no Linux - Clonando repositórios do GITHUB - Aula 8
+- [X] Instalando o GIT no Linux - Clonando repositórios do GITHUB
 - [ ] Criar e editar arquivos e pastas direto no GITHUB - sincronizando alterações
 - [ ] Trabalhando um projeto em vários repositórios locais - Resolvendo conflitos
 - [ ] Usando o GITHUB como portfólio e currículo
