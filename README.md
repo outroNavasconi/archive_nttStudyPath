@@ -49,7 +49,7 @@ Materiais de estudo sobre DevOps.
 - [X] Usando o GITHUB como portfólio e currículo
 - [X] Personalizando o README.md com markdown (inserir gif, vídeo, etc)
 - [X] KANBAN - Gerenciando projetos (aba Projects) com o ferramenta nativa.
-- [ ] Selos dinâmicos de metadados usando shields.io
+- [X] Selos dinâmicos de metadados usando shields.io
 - [ ] Como hospedar GRATUITAMENTE um site no GITHUB
 
 ## Gerenciamento de Dependências e Build com Maven

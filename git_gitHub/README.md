@@ -125,3 +125,10 @@ git push -u origin main
 ## Como criar um repositório no GITHUB e clonar no Windows
 
 Após a criação do repositório no GitHub, para clonar na máquina local é preciso executar o comando `git clone [url do repo]`.
+
+## Selos dinâmicos de metadados usando shields.io
+
+![GitHub repo size](https://img.shields.io/github/repo-size/outroNavasconi/archive_nttStudyPath)
+![GitHub License](https://img.shields.io/github/license/outroNavasconi/archive_nttStudyPath)
+![GitHub language count](https://img.shields.io/github/languages/count/outroNavasconi/archive_nttStudyPath)
+![GitHub top language](https://img.shields.io/github/languages/top/outroNavasconi/archive_nttStudyPath)
