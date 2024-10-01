@@ -47,8 +47,8 @@ Materiais de estudo sobre DevOps.
 - [X] Trabalhando um projeto em vários repositórios locais - Resolvendo conflitos
 - [X] Fork e Pull Request - Exemplo simples e prático
 - [X] Usando o GITHUB como portfólio e currículo
-- [ ] Personalizando o README.md com markdown (inserir gif, vídeo, etc)
-- [ ] KANBAN - Gerenciando projetos (aba Projects) com o ferramenta nativa.
+- [X] Personalizando o README.md com markdown (inserir gif, vídeo, etc)
+- [X] KANBAN - Gerenciando projetos (aba Projects) com o ferramenta nativa.
 - [ ] Selos dinâmicos de metadados usando shields.io
 - [ ] Como hospedar GRATUITAMENTE um site no GITHUB
 
