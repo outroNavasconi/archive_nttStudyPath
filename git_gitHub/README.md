@@ -109,3 +109,15 @@ System.out.println("Acabou Chorare");
 Onde o texto abaixo de `HEAD` indica qual é o texto da branch atual e o texto abaixo de `=` indica qual é a modificação proveniente da outra branch. É possível apagar qual modificação deseja-se excluir ou, ainda, manter as duas modificações.  
 
 Após realizado a solução do conflito, basta realizar um `git add` seguido de um `git commit`. Se for para abortar o merge, basta executar o comando `git merge --abort`.
+
+## Enviando um projeto local para o GITHUB
+
+Após criar um repositório no GITHUB e não marcar para inicializar com o README, o próprio GITHUB irá mostrar quais são os passos necessários para associar o repositório local com o repositório remoto. A sequência de comandos abaixo mostra quando o repositóro local não foi inicializado na máquina do usuário:
+
+```text
+git init
+gut add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/[user domain]/[repo name].git
+git push -u origin main
+```
