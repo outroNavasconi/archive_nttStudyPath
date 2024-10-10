@@ -16,11 +16,13 @@ public class ClientOrder {
     private BigDecimal price = BigDecimal.ZERO;
     private LocalDate creation_date = LocalDate.now();
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     private Client client;
 
     @OneToMany(mappedBy = "clientOrder", cascade = CascadeType.ALL)
     private List<ItemOrder> itemOrderList = new ArrayList<>();
+
+    public ClientOrder(){}
 
     public ClientOrder(Client client) {
         this.client = client;

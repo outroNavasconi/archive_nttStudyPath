@@ -49,4 +49,12 @@ public class OrderDAOImpl implements OrderDAO {
         return this.em.createQuery(jpql, SalesReportVo.class)
                 .getResultList();
     }
+
+    @Override
+    public ClientOrder getOrderWithCliente(Long id) {
+        String jpql = "SELECT c FROM ClientOrder c JOIN FETCH c.client WHERE c.id = :id";
+        return this.em.createQuery(jpql, ClientOrder.class)
+                .setParameter("id", id)
+                .getSingleResult();
+    }
 }

@@ -11,4 +11,6 @@ public interface OrderDAO {
     List<Object[]> salesReport();
 
     List<SalesReportVo> salesReportV2();
+
+    ClientOrder getOrderWithCliente(Long id);
 }

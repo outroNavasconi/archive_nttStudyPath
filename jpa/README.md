@@ -7,10 +7,10 @@
 ORM não algum tipo de ferramenta ou tecnologia mas uma técnica ou conceito para manipulação de dados em bases relacionais. Surgiu na esteira da popularização do paradigma POO. O objetivo foi facilitar e flexibilizar a forma como os dados são manipulados em bases relacionais.  
 
 ```mermaid
-flowchart LR
-  ModelA[Model A] --> ORM[ORM]
-  ModelB[Model B] --> ORM
-  ORM --> DB[DB]
+  flowchart LR
+    ModelA[Model A] --> ORM[ORM]
+    ModelB[Model B] --> ORM
+    ORM --> DB[DB]
 ```
 
 Toda a camada de dados relacionais, Conexões e Querys que o desenvolvedor teria que implentar é abstraido por algum framework ORM. O foco passa a ser na declaração dos modelos de dados, ou seja, as classes e seus atributos que correspondem às tabelas e suas colunas em uma base relacional. Apesar disso, é possível declarar explicitamente querys com os frameworks. Cria uma ponte entre linuagen POO e bases de dados relacionais. Faz isso estabelendo associações:
@@ -113,15 +113,15 @@ Há também a possibilidade de utilizar um framework como o Spring e Hibernate.
 ## Ciclo de Vida das Entidades JPA
 
 ```mermaid
-stateDiagram-v2
-  [*] --> Transient : new
-  Transient --> Managed : persist()
-  Managed --> Detached : close() / clear()
-  Detached --> Managed : merge()
-  Managed --> Removed : remove()
-  Managed --> BD : commit() / flush()
-  BD --> Managed : find() / createQuery()
-  BD --> [*]
+  stateDiagram-v2
+    [*] --> Transient : new
+    Transient --> Managed : persist()
+    Managed --> Detached : close() / clear()
+    Detached --> Managed : merge()
+    Managed --> Removed : remove()
+    Managed --> BD : commit() / flush()
+    BD --> Managed : find() / createQuery()
+    BD --> [*]
 ```
 
 - **Transient**: O objeto foi instânciado, porém não foi reportado para o EntityManager. Assim, esse último desconhece essa entidade.
@@ -170,5 +170,44 @@ Onde `:nome` é um argumento nomeado que será substituído posteriormente por u
 ### named query
 
 ---
+
+## Carregamentos Lazy e Eager
+
+Supondo que em um banco de dados exista o relacionamento `AUTOR (1) <--> (0..n) LIVRO` e as tabelas já tenham sido mapeadas, quando a consulta abaixo for realizada:
+
+```java
+  EntityManager em = JPAUtil.getEntityManager();
+  Livro livro = em.find(Livro.class, 1L);
+  System.out.println(livro.getTitulo());
+```
+
+O framework de JPA - por padrão - irá realizar a consulta fazendo um join com a tabela `LIVRO`, acarretando em um overhead quando esse relacionamento não é necessário. Isso acontece com os relacionamento `@ManyToOne`, `@OneToOne`. Ou seja, relacionamento `*ToOne`. Já relacionamentos `*ToMany` não possuem essa característica.  
+
+O padrão dos relacionamentos `*ToOne` é `Eager`, ou seja, carregar as informações de imediato. Já para os relacionamentos `*ToMany`, o padrão é `Lazy`, carregando as informações apenas quando forem requisitadas explicitamente no código.
+
+É possível alterar esse comportamento com o atributo `fetch`. Assim, o exemplo acima ficaria:
+
+```java
+  @Entity
+  @Table(name = "LIVRO")
+  public class Livro {
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    private Autor autor;
+  }
+```
+
+Uma recomendação seria alterar todos os relacionamentos `*ToOne` para `LAZY`. Entretanto, um efeito colateral é o seguinte:
+
+```java
+  EntityManager em = JPAUtil.getEntityManager();
+  Livro livro = em.find(Livro.class, 1L);
+  em.close();
+  System.out.println(livro.getAutor().getNome());
+```
+
+O trecho de código acima gera o erro `LazyInitializationException`, pois o EntityManager foi fechado e como as informações do autor do livro não haviam sido carregadas, não foi possível executar a query para o autor em `livro.getAutor()`.
+
+Uma solução é a criação de uma query específica que retorne o autor. A consulta ficaria `"SELECT l FROM Livro l JOIN FETCH l.autor WHERE l.id = :id"`, onde o `JOIN FETCH` indica uma junção de tabelas mas também o carregamento dos dados filtrados. Nesse caso, a chave será o identificados do autor.
 
 ## DAO

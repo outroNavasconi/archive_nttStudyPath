@@ -381,9 +381,9 @@ Materiais de estudo sobre DevOps.
 **Indicação de Material de Estudo: [Aqui](https://cursos.alura.com.br/course/java-jpa-consultas-avancadas-performance-modelos-complexos)**  
 *Tempo Aprox: 02h42m00s*
 
-- [X] Mais relacionamentos Ver primeiro vídeo
+- [X] Mais relacionamentos
 - [X] Consultas avançadas
-- [ ] Performance de consultas
+- [X] Performance de consultas
 - [ ] Criteria API
 - [ ] Outros tópicos
 

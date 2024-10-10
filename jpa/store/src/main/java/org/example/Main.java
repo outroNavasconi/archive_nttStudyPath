@@ -16,15 +16,21 @@ public class Main {
     public static void main(String[] args) {
         registerNewProduct();
         registerNewOrder();
+//
+//        EntityManager em = JPAUtil.getEntityManager();
+//        ProductDAOImpl productDAO = new ProductDAOImpl(em);
+//
+//        Product product = productDAO.searchById(1);
+//        System.out.println(product);
+//
+//        productDAO.searchAll().forEach(System.out::println);
+//        em.close();
 
         EntityManager em = JPAUtil.getEntityManager();
-        ProductDAOImpl productDAO = new ProductDAOImpl(em);
-
-        Product product = productDAO.searchById(1);
-        System.out.println(product);
-
-        productDAO.searchAll().forEach(System.out::println);
+        OrderDAOImpl orderDAO = new OrderDAOImpl(em);
+        ClientOrder order = orderDAO.getOrderWithCliente(1L);
         em.close();
+        System.out.println(order.getClient().getName());
     }
 
     private static void registerNewProduct() {
