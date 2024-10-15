@@ -210,4 +210,72 @@ O trecho de código acima gera o erro `LazyInitializationException`, pois o Enti
 
 Uma solução é a criação de uma query específica que retorne o autor. A consulta ficaria `"SELECT l FROM Livro l JOIN FETCH l.autor WHERE l.id = :id"`, onde o `JOIN FETCH` indica uma junção de tabelas mas também o carregamento dos dados filtrados. Nesse caso, a chave será o identificados do autor.
 
+## Consultas Dinâmicas e Criteria API
+
+Por vezes, é desejado que as consultas tenham uma certa flexibilidade na lista de parâmetros onde alguns podem se tornar opcionais. Tradicionalmente, é preciso verificar quais parâmetros do método estão sendo enviados e quais não estão para montar dinamicamente a consulta, como no exemplo abaixo:
+
+```java
+  public List<Product> searchByParams(String name, BigDecimal price, LocalDate creationDate) {
+    String jpql = "SELECT p FROM Product p WHERE 1=1 ";
+
+    if (name != null && !name.trim().isEmpty()) {
+      jpql += " AND p.name = :name ";
+    }
+
+    if (price != null) {
+      jpql += " AND p.price = :price ";
+    }
+
+    if (creationDate != null) {
+      jpql += " AND p.creation_date = :creationDate ";
+    }
+
+    TypedQuery<Product> query = this.em.createQuery(jpql, Product.class);
+
+    if (name != null && !name.trim().isEmpty()) {
+      query.setParameter("name", name);
+    }
+
+    if (price != null) {
+      query.setParameter("price", price);
+    }
+
+    if (creationDate != null) {
+      query.setParameter("creationDate", creationDate);
+    }
+
+    return query.getResultList();
+  }
+```
+
+Um detalhe importante reside no trecho `WHERE 1=1`. É uma espécie de gambiarra para não deixar a responsabilidade de inserir o **WHERE** nas verificações de parâmetros. Caso fosse assim, seria preciso verificar todas as vezes se o **WHERE** foi inserido pela verificação anterior. A declaração `WHERE 1=1` irá sempre resultar em verdadeiro. Portanto, a consulta será executada sem erros retornando todos os registros da tabela.
+
+Uma outra possibilidade para montar consultas dinâmicas, é o uso da API **Criteiria** da JPA. É um conjunto de especificações para criação de consultas utilizando chamadas à métodos específicos. O código abaixo é equivalante ao código acima, porém, fazendo uso desta API.
+
+```java
+  public List<Product> searchByParamsWithCriteria(String name, BigDecimal price, LocalDate creationDate) {
+    CriteriaBuilder builder = this.em.getCriteriaBuilder();
+    CriteriaQuery<Product> query = builder.createQuery(Product.class);
+    Root<Product> from = query.from(Product.class);
+
+    Predicate filters = builder.and();
+
+    if (name != null && !name.trim().isEmpty()) {
+      filters = builder.and(filters, builder.equal(from.get("name"), name));
+    }
+
+    if (price != null) {
+      filters = builder.and(filters, builder.equal(from.get("price"), price));
+    }
+
+    if (creationDate != null) {
+      filters = builder.and(filters, builder.equal(from.get("creation_date"), creationDate));
+    }
+
+    query.where(filters);
+
+    return this.em.createQuery(query).getResultList();
+  }
+```
+
 ## DAO

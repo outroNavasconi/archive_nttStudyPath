@@ -384,7 +384,7 @@ Materiais de estudo sobre DevOps.
 - [X] Mais relacionamentos
 - [X] Consultas avançadas
 - [X] Performance de consultas
-- [ ] Criteria API
+- [X] Criteria API
 - [ ] Outros tópicos
 
 ## Verbos HTTP

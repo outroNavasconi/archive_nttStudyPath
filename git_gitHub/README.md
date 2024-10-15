@@ -116,7 +116,7 @@ Após criar um repositório no GITHUB e não marcar para inicializar com o READM
 
 ```text
 git init
-gut add README.md
+git add README.md
 git commit -m "first commit"
 git remote add origin https://github.com/[user domain]/[repo name].git
 git push -u origin main
