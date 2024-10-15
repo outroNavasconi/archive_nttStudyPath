@@ -8,7 +8,7 @@ Materiais de estudo sobre DevOps.
 - [ ] Gerenciamento de Dependências e Build com Maven
 - [ ] Java
 - [X] JPA 1
-- [ ] JPA 2
+- [X] JPA 2
 - [ ] Verbos HTTP
 - [ ] API REST
 - [ ] JSON
@@ -385,7 +385,7 @@ Materiais de estudo sobre DevOps.
 - [X] Consultas avançadas
 - [X] Performance de consultas
 - [X] Criteria API
-- [ ] Outros tópicos
+- [X] Outros tópicos
 
 ## Verbos HTTP
 

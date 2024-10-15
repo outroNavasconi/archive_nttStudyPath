@@ -5,22 +5,16 @@ import jakarta.persistence.*;
 @Entity
 @Table(name="category")
 public class Category {
-    @Id
-    @GeneratedValue(strategy= GenerationType.IDENTITY)
-    private long id;
-    private String nome;
+    @EmbeddedId
+    private CategoryId id;
 
     public Category() {}
 
-    public Category(String nome) {
-        this.nome = nome;
+    public Category(String type, String name) {
+        this.id = new CategoryId(type, name);
     }
 
-    public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
+    public CategoryId getId() {
+        return id;
     }
 }

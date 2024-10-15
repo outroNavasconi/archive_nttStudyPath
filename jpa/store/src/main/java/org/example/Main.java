@@ -30,11 +30,11 @@ public class Main {
         OrderDAOImpl orderDAO = new OrderDAOImpl(em);
         ClientOrder order = orderDAO.getOrderWithCliente(1L);
         em.close();
-        System.out.println(order.getClient().getName());
+        System.out.println(order.getClient().getPersonalData().getName());
     }
 
     private static void registerNewProduct() {
-        Category cPhone = new Category("PHONE");
+        Category cPhone = new Category("XPTO", "PHONE");
         Product phone = new Product("A30", "Celular", new BigDecimal("990.35"), cPhone);
 
         EntityManager entityManager = JPAUtil.getEntityManager();
@@ -45,6 +45,9 @@ public class Main {
         categoryDAO.register(cPhone);
         productDAO.register(phone);
         entityManager.getTransaction().commit();
+
+        // busca com chave composta
+        Category c = entityManager.find(Category.class, new CategoryId("XPTO", "PHONE"));
     }
 
     private static void registerNewOrder() {

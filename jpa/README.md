@@ -278,4 +278,101 @@ Uma outra possibilidade para montar consultas dinâmicas, é o uso da API **Crit
   }
 ```
 
-## DAO
+## Embeddable
+
+Este recurso da JPA permite uma separação de conjuntos de dados em classes "embutíveis". Funciona da seguinte forma, a classe abaixo representa um cliente. Certos atributos - como nome e cpf - podem ser separados em outra classe, pois não é um conjunto de dados próprio do cliente podendo ser comum a outras entidades.
+
+```java
+  @Entity
+  @Table(name="Client")
+  public class Client {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    private String name;
+    private String cpf;
+  }
+```
+
+Utilizando o `Embeddable` é possível separar esses dois conjuntos de dados e sinalizar com uma anotação que um objeto será embutido em outra classe, ficando da seguinte forma:
+
+```java
+  @Embeddable
+  public class PersonalData {
+    private String name;
+    private String cpf;
+  }
+```
+
+```java
+  @Entity
+  @Table(name="Client")
+  public class Client {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    @Embedded
+    private PersonalData personalData;
+  }
+```
+
+O framework de JPA se encarregará de resolver o relacionamento entre essas duas classes.
+
+## Mapeamento de Herança
+
+A JPA ainda especifica um tipo de mapeamento por meio de herança. As classes abaixo ilustram essa funcionalidade:
+
+```java
+  @Entity
+  public class Book extends Product {
+    private String author;
+    private Integer pages;
+  }
+```
+
+```java
+  @Entity
+  @Table(name = "Product")
+  @Inheritance(strategy = InheritanceType.JOINED)
+  public class Product {
+    @Id
+    @Column(name = "id")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    private String name;
+    private String description;
+    private BigDecimal price;
+    private LocalDateTime creation_date = LocalDateTime.now();
+
+    @ManyToOne
+    private Category category;
+  }
+```
+
+Os dois tipos mais comuns desse mapeamento é o `JOINED` e o `SINGLE_TABLE`. O primeiro vai validar a herança e criar uma tabela para cada classe, ou seja, uma tabela **Book** e outra **Product**. Cada qual com seus respectivos atributos e compartilhando uma chave estrangeira. O segundo vai unificar todos os atributos em uma tabela. Além disso, ele cria uma coluna multivalorada para identificar as diferentes classes.
+
+## Mapeamento de Chaves Compostas
+
+Quando o id de uma tabela for uma chave composta, é possível utilizar o `Embeddable` para fazer esse mapeamento. Segue um exemplo abaixo:
+
+```java
+  @Embeddable
+  public class CategoryId implements Serializable {
+    private String type;
+    private String name;
+  }
+```
+
+```java
+  @Entity
+  @Table(name = "category")
+  public class Category {
+    @EmbeddedId
+    private CategoryId id;
+  }
+```
+
+Onde a classe **CategoryId** representa a chave composta da tabela **category** mapeada pela entidade `Category`. O detable mais importante é que deve ser utilizado a anotação `EmbeddedId` ao invés de simplesmente `Embedded`.

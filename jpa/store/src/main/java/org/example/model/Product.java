@@ -8,6 +8,7 @@ import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "Product")
+@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 public class Product {
     @Id
     @Column(name = "id")
