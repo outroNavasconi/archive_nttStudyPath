@@ -7,8 +7,8 @@ Materiais de estudo sobre DevOps.
 - [X] Git e GitHub
 - [ ] Gerenciamento de Dependências e Build com Maven
 - [ ] Java
-- [ ] JPA 1
-- [ ] JPA 2
+- [X] JPA 1
+- [X] JPA 2
 - [ ] Verbos HTTP
 - [ ] API REST
 - [ ] JSON
@@ -370,22 +370,22 @@ Materiais de estudo sobre DevOps.
 **Indicação de Material de Estudo: [Aqui](https://cursos.alura.com.br/course/persistencia-jpa-introducao-hibernate)**  
 *Tempo Aprox: 02h29m00s*
 
-- [ ] Introdução à JPA Ver primeiro vídeo
-- [ ] Configurações e EntityManager
-- [ ] Mapeando entidades
-- [ ] Ciclo de vida de uma entidade
-- [ ] Consultas com JPQL
+- [X] Introdução à JPA Ver primeiro vídeo
+- [X] Configurações e EntityManager
+- [X] Mapeando entidades
+- [X] Ciclo de vida de uma entidade
+- [X] Consultas com JPQL
 
 ## JPA 2
 
 **Indicação de Material de Estudo: [Aqui](https://cursos.alura.com.br/course/java-jpa-consultas-avancadas-performance-modelos-complexos)**  
 *Tempo Aprox: 02h42m00s*
 
-- [ ] Mais relacionamentos Ver primeiro vídeo
-- [ ] Consultas avançadas
-- [ ] Performance de consultas
-- [ ] Criteria API
-- [ ] Outros tópicos
+- [X] Mais relacionamentos
+- [X] Consultas avançadas
+- [X] Performance de consultas
+- [X] Criteria API
+- [X] Outros tópicos
 
 ## Verbos HTTP
 
