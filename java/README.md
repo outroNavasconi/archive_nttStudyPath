@@ -35,3 +35,21 @@ O processo de compilação de uma classe e execução são feitos utilizando os 
 ```
 
 Para executar um arquivo java diretamente, pode ser utilizado o comando `java [nome do arquivo].java`.
+
+## Comentários
+
+Em java, os comentários em linhas são escritos utilizando o `//` e os comentários de bloco são feitos com `/*` e `*/`.
+Há também uma convenção chamada de **javadoc** para padronizar um tipo de documentação do código. Um exemplo de documentação:
+
+```java
+    /*
+     * Função responsável por retornar o valor absoluto de um número inteiro
+     *
+     *  @param a Valor inteiro que será verificado
+     *  @returns O valor absoluto do número 
+     */
+    public int abs(int a) {
+        return a < 0 ? a * -1 : a;
+    }
+
+```

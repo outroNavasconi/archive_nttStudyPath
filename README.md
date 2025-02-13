@@ -87,8 +87,8 @@ Materiais de estudo sobre DevOps.
 - [X] Executando compilação manualmente
 - [X] Download da IDE IntelliJ Community
 - [X] Conhecendo a IDE IntelliJ Community
-- [ ] Organizando o código em pacotes
-- [ ] Comentários
+- [X] Organizando o código em pacotes
+- [X] Comentários
 - [ ] Tipos primitivos pt 01 - convenções de variáveis
 - [ ] Tipos primitivos pt 02 - declaração e tamanho em memória
 - [ ] Tipos primitivos pt 03 - casting
