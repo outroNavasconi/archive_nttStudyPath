@@ -92,8 +92,8 @@ Materiais de estudo sobre DevOps.
 - [X] Tipos primitivos pt 01 - convenções de variáveis
 - [X] Tipos primitivos pt 02 - declaração e tamanho em memória
 - [X] Tipos primitivos pt 03 - casting
-- [ ] Tipos primitivos pt 04 - Strings
-- [ ] Tipos primitivos pt 05 - Exercício
+- [X] Tipos primitivos pt 04 - Strings
+- [X] Tipos primitivos pt 05 - Exercício
 - [ ] Operadores pt 01 - Aritiméticos
 - [ ] Operadores pt 02 - Relacionais
 - [ ] Operadores pt 03 - Lógicos AND
