@@ -89,7 +89,7 @@ Materiais de estudo sobre DevOps.
 - [X] Conhecendo a IDE IntelliJ Community
 - [X] Organizando o código em pacotes
 - [X] Comentários
-- [ ] Tipos primitivos pt 01 - convenções de variáveis
+- [X] Tipos primitivos pt 01 - convenções de variáveis
 - [ ] Tipos primitivos pt 02 - declaração e tamanho em memória
 - [ ] Tipos primitivos pt 03 - casting
 - [ ] Tipos primitivos pt 04 - Strings

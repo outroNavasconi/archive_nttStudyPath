@@ -53,3 +53,20 @@ Há também uma convenção chamada de **javadoc** para padronizar um tipo de do
     }
 
 ```
+
+## Tipos Primitivos
+
+O java possui os seguintes tipos primitivos com os seguintes tamanhos e limites de valores:
+
+|   Tipo  | Bytes |         Limite Inf         |         Limite Sup        | Valor Default |
+|:-------:|:-----:|:--------------------------:|:-------------------------:|:-------------:|
+|   byte  |   1   |            -128            |            127            |       0       |
+|  short  |   2   |           -32.768          |           32.767          |       0       |
+|   int   |   4   |       -2.147.483.648       |       2.147.483.647       |       0       |
+|   long  |   8   | -9.223.372.036.854.775.808 | 9.223.372.036.854.775.807 |       0       |
+|  float  |   4   |           1.4E-45          |        3.4028235E38       |      0,0      |
+|  double |   8   |          4.9E-324          |   .7976931348623157E308   |      0,0      |
+| boolean |   1   |            false           |            true           |     false     |
+|   char  |   2   |                            |                           |     \u0000    |
+
+

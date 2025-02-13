@@ -38,3 +38,7 @@
 *.zip
 *.tar.gz
 *.rar
+
+# Java Folders #
+java/**/bin
+java/**/build
