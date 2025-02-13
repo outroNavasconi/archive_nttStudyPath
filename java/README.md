@@ -56,6 +56,8 @@ Há também uma convenção chamada de **javadoc** para padronizar um tipo de do
 
 ## Tipos Primitivos
 
+#### Declaração e tamannho em memória
+
 O java possui os seguintes tipos primitivos com os seguintes tamanhos e limites de valores:
 
 |   Tipo  | Bytes |         Limite Inf         |         Limite Sup        | Valor Default |
@@ -69,4 +71,23 @@ O java possui os seguintes tipos primitivos com os seguintes tamanhos e limites 
 | boolean |   1   |            false           |            true           |     false     |
 |   char  |   2   |                            |                           |     \u0000    |
 
+#### Casting
+
+O casting é uma técnica para conversão entre tipos diferentes. Um exemplo abaixo:
+
+```java
+    long d = 1000L;
+    int e = (int) d;
+```
+
+No cenário acima, há uma conversão de long para int antes da atribuição à variável **e**.
+Essa conversão deve ocorrer em casos onde o tamanho do tipo da variável que irá ser assinaldada é menor que o valor que está sendo atribuído.
+Assim, será a atribuição acontecerá até onde for possível.
+
+Entretanto, o casting não é possível entre alguns tipos primitivos, como conversões envolvendo `boolean` e tipos inteiros.
+
+> ./Main.java:9: error: incompatible types: boolean cannot be converted to int
+>       int a = (int) true;
+
+Acima está um exemplo de erro que pode ocorrer ao tentar realizar uma conversão entre `boolean` e `int`.
 

@@ -90,8 +90,8 @@ Materiais de estudo sobre DevOps.
 - [X] Organizando o código em pacotes
 - [X] Comentários
 - [X] Tipos primitivos pt 01 - convenções de variáveis
-- [ ] Tipos primitivos pt 02 - declaração e tamanho em memória
-- [ ] Tipos primitivos pt 03 - casting
+- [X] Tipos primitivos pt 02 - declaração e tamanho em memória
+- [X] Tipos primitivos pt 03 - casting
 - [ ] Tipos primitivos pt 04 - Strings
 - [ ] Tipos primitivos pt 05 - Exercício
 - [ ] Operadores pt 01 - Aritiméticos
