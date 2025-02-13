@@ -91,3 +91,12 @@ Entretanto, o casting não é possível entre alguns tipos primitivos, como conv
 
 Acima está um exemplo de erro que pode ocorrer ao tentar realizar uma conversão entre `boolean` e `int`.
 
+#### String
+
+String não é um tipo primitivo em java. É, na verdade, uma classe que encapsula um array de caracteres e ofere alguns métodos para manipulação dele.
+A declaração de uma variável do tipo `String` é feita da seguinte forma:
+
+```java
+    String nome = "Fulano";
+    System.out.println(nome);
+```
