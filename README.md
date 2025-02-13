@@ -79,21 +79,21 @@ Materiais de estudo sobre DevOps.
 **Indicação de Material de Estudo: [Aqui](https://www.youtube.com/watch?v=VKjFuX91G5Q&list=PL62G310vn6nFIsOCC0H-C2infYgwm8SWW)**  
 *Tempo Aprox: 22h43m55s*
 
-- [ ] Maratona Java Virado No Jiraya - Bem-vindo
-- [ ] O que esperar do curso
-- [ ] Como Java Funciona
-- [ ] Fazendo o download da JDK 15
-- [ ] Configurando variáveis de ambiente
-- [ ] Executando compilação manualmente
-- [ ] Download da IDE IntelliJ Community
-- [ ] Conhecendo a IDE IntelliJ Community
-- [ ] Organizando o código em pacotes
-- [ ] Comentários
-- [ ] Tipos primitivos pt 01 - convenções de variáveis
-- [ ] Tipos primitivos pt 02 - declaração e tamanho em memória
-- [ ] Tipos primitivos pt 03 - casting
-- [ ] Tipos primitivos pt 04 - Strings
-- [ ] Tipos primitivos pt 05 - Exercício
+- [X] Maratona Java Virado No Jiraya - Bem-vindo
+- [X] O que esperar do curso
+- [X] Como Java Funciona
+- [X] Fazendo o download da JDK 15
+- [X] Configurando variáveis de ambiente
+- [X] Executando compilação manualmente
+- [X] Download da IDE IntelliJ Community
+- [X] Conhecendo a IDE IntelliJ Community
+- [X] Organizando o código em pacotes
+- [X] Comentários
+- [X] Tipos primitivos pt 01 - convenções de variáveis
+- [X] Tipos primitivos pt 02 - declaração e tamanho em memória
+- [X] Tipos primitivos pt 03 - casting
+- [X] Tipos primitivos pt 04 - Strings
+- [X] Tipos primitivos pt 05 - Exercício
 - [ ] Operadores pt 01 - Aritiméticos
 - [ ] Operadores pt 02 - Relacionais
 - [ ] Operadores pt 03 - Lógicos AND
