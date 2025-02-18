@@ -100,3 +100,14 @@ A declaração de uma variável do tipo `String` é feita da seguinte forma:
     String nome = "Fulano";
     System.out.println(nome);
 ```
+
+## Operadores
+
+#### Aritméticos
+
+Os operadores aritméticos em Java são:
+
+- Adição: `+`
+- Subtração: `-`
+- Divisão: `/`
+- Multiplicação: `*`
