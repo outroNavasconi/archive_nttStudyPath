@@ -95,7 +95,7 @@ Materiais de estudo sobre DevOps.
 - [X] Tipos primitivos pt 04 - Strings
 - [X] Tipos primitivos pt 05 - Exercício
 - [X] Operadores pt 01 - Aritiméticos
-- [ ] Operadores pt 02 - Relacionais
+- [X] Operadores pt 02 - Relacionais
 - [ ] Operadores pt 03 - Lógicos AND
 - [ ] Operadores pt 04 - Lógicos OR
 - [ ] Operadores pt 05 - Atribuição

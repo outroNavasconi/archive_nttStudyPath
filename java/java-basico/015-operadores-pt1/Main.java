@@ -16,5 +16,8 @@ public class Main {
 
 		// Multiplicação
 		System.out.println(num2 * num1);
+
+		// Resto
+		System.out.println(num2 % num1);
 	}
 }

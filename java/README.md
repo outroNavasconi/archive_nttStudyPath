@@ -111,3 +111,14 @@ Os operadores aritméticos em Java são:
 - Subtração: `-`
 - Divisão: `/`
 - Multiplicação: `*`
+- Resto: `%`
+
+#### Relacionais
+
+- Menor que: `<`
+- Maior que: `>`
+- Igual a: `==`
+- Menor ou igual a: `<=`
+- Maior ou igual a: `>=`
+- Diferente: `!=`
+
