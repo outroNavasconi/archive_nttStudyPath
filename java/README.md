@@ -122,3 +122,27 @@ Os operadores aritméticos em Java são:
 - Maior ou igual a: `>=`
 - Diferente: `!=`
 
+#### Lógico
+
+- AND: `&&`
+- OR: `||`
+- NOT: `!`
+
+Tabela verdade do operador `&&`:
+
+| A | B | AND |
+|:-:|:-:|:---:|
+| 0 | 0 |  0  |
+| 0 | 1 |  0  |
+| 1 | 0 |  0  |
+| 1 | 1 |  1  |
+
+Tabela verdade do operador `||`:
+
+| A | B | OR |
+|:-:|:-:|:--:|
+| 0 | 0 |  0 |
+| 0 | 1 |  1 |
+| 1 | 0 |  1 |
+| 1 | 1 |  1 |
+

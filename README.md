@@ -96,9 +96,9 @@ Materiais de estudo sobre DevOps.
 - [X] Tipos primitivos pt 05 - Exercício
 - [X] Operadores pt 01 - Aritiméticos
 - [X] Operadores pt 02 - Relacionais
-- [ ] Operadores pt 03 - Lógicos AND
-- [ ] Operadores pt 04 - Lógicos OR
-- [ ] Operadores pt 05 - Atribuição
+- [X] Operadores pt 03 - Lógicos AND
+- [X] Operadores pt 04 - Lógicos OR
+- [X] Operadores pt 05 - Atribuição
 - [ ] Estruturas Condicionais pt 01 - IF
 - [ ] Estruturas Condicionais pt 02 - ELSE IF
 - [ ] Estruturas Condicionais pt 03 - Operador ternário
