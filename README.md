@@ -102,10 +102,10 @@ Materiais de estudo sobre DevOps.
 - [X] Estruturas Condicionais pt 01 - IF
 - [X] Estruturas Condicionais pt 02 - ELSE IF
 - [X] Estruturas Condicionais pt 03 - Operador ternário
-- [ ] Estruturas Condicionais pt 04 - Tabela Verdade e exercício
-- [ ] Estruturas Condicionais pt 05 - Resolução do exercícios
-- [ ] Estruturas Condicionais pt 06 - Switch
-- [ ] Estruturas Condicionais pt 07 - Switch exercício
+- [X] Estruturas Condicionais pt 04 - Tabela Verdade e exercício
+- [X] Estruturas Condicionais pt 05 - Resolução do exercícios
+- [X] Estruturas Condicionais pt 06 - Switch
+- [X] Estruturas Condicionais pt 07 - Switch exercício
 - [ ] Estruturas de Repetição pt 01 - Laços de repetição while, do while, for
 - [ ] Estruturas de Repetição pt 02 - Exercício for
 - [ ] Estruturas de Repetição pt 03 - Break
