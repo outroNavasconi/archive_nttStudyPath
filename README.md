@@ -111,10 +111,10 @@ Materiais de estudo sobre DevOps.
 - [X] Estruturas de Repetição pt 03 - Break
 - [X] Estruturas de Repetição pt 04 - Exercício Break
 - [X] Estruturas de Repetição pt 05 - Continue
-- [ ] Arrays pt 01
-- [ ] Arrays pt 02
-- [ ] Arrays pt 03
-- [ ] Arrays pt 04 - Foreach
+- [X] Arrays pt 01
+- [X] Arrays pt 02
+- [X] Arrays pt 03
+- [X] Arrays pt 04 - Foreach
 - [ ] Arrays Multidimensionais pt 01
 - [ ] Arrays Multidimensionais pt 02 - Foreach
 - [ ] Arrays Multidimensionais pt 03 - Inicialização
