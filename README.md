@@ -99,9 +99,9 @@ Materiais de estudo sobre DevOps.
 - [X] Operadores pt 03 - Lógicos AND
 - [X] Operadores pt 04 - Lógicos OR
 - [X] Operadores pt 05 - Atribuição
-- [ ] Estruturas Condicionais pt 01 - IF
-- [ ] Estruturas Condicionais pt 02 - ELSE IF
-- [ ] Estruturas Condicionais pt 03 - Operador ternário
+- [X] Estruturas Condicionais pt 01 - IF
+- [X] Estruturas Condicionais pt 02 - ELSE IF
+- [X] Estruturas Condicionais pt 03 - Operador ternário
 - [ ] Estruturas Condicionais pt 04 - Tabela Verdade e exercício
 - [ ] Estruturas Condicionais pt 05 - Resolução do exercícios
 - [ ] Estruturas Condicionais pt 06 - Switch
