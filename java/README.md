@@ -100,3 +100,49 @@ A declaração de uma variável do tipo `String` é feita da seguinte forma:
     String nome = "Fulano";
     System.out.println(nome);
 ```
+
+## Operadores
+
+#### Aritméticos
+
+Os operadores aritméticos em Java são:
+
+- Adição: `+`
+- Subtração: `-`
+- Divisão: `/`
+- Multiplicação: `*`
+- Resto: `%`
+
+#### Relacionais
+
+- Menor que: `<`
+- Maior que: `>`
+- Igual a: `==`
+- Menor ou igual a: `<=`
+- Maior ou igual a: `>=`
+- Diferente: `!=`
+
+#### Lógico
+
+- AND: `&&`
+- OR: `||`
+- NOT: `!`
+
+Tabela verdade do operador `&&`:
+
+| A | B | AND |
+|:-:|:-:|:---:|
+| 0 | 0 |  0  |
+| 0 | 1 |  0  |
+| 1 | 0 |  0  |
+| 1 | 1 |  1  |
+
+Tabela verdade do operador `||`:
+
+| A | B | OR |
+|:-:|:-:|:--:|
+| 0 | 0 |  0 |
+| 0 | 1 |  1 |
+| 1 | 0 |  1 |
+| 1 | 1 |  1 |
+

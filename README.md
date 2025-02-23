@@ -94,27 +94,27 @@ Materiais de estudo sobre DevOps.
 - [X] Tipos primitivos pt 03 - casting
 - [X] Tipos primitivos pt 04 - Strings
 - [X] Tipos primitivos pt 05 - Exercício
-- [ ] Operadores pt 01 - Aritiméticos
-- [ ] Operadores pt 02 - Relacionais
-- [ ] Operadores pt 03 - Lógicos AND
-- [ ] Operadores pt 04 - Lógicos OR
-- [ ] Operadores pt 05 - Atribuição
-- [ ] Estruturas Condicionais pt 01 - IF
-- [ ] Estruturas Condicionais pt 02 - ELSE IF
-- [ ] Estruturas Condicionais pt 03 - Operador ternário
-- [ ] Estruturas Condicionais pt 04 - Tabela Verdade e exercício
-- [ ] Estruturas Condicionais pt 05 - Resolução do exercícios
-- [ ] Estruturas Condicionais pt 06 - Switch
-- [ ] Estruturas Condicionais pt 07 - Switch exercício
-- [ ] Estruturas de Repetição pt 01 - Laços de repetição while, do while, for
-- [ ] Estruturas de Repetição pt 02 - Exercício for
-- [ ] Estruturas de Repetição pt 03 - Break
-- [ ] Estruturas de Repetição pt 04 - Exercício Break
-- [ ] Estruturas de Repetição pt 05 - Continue
-- [ ] Arrays pt 01
-- [ ] Arrays pt 02
-- [ ] Arrays pt 03
-- [ ] Arrays pt 04 - Foreach
+- [X] Operadores pt 01 - Aritiméticos
+- [X] Operadores pt 02 - Relacionais
+- [X] Operadores pt 03 - Lógicos AND
+- [X] Operadores pt 04 - Lógicos OR
+- [X] Operadores pt 05 - Atribuição
+- [X] Estruturas Condicionais pt 01 - IF
+- [X] Estruturas Condicionais pt 02 - ELSE IF
+- [X] Estruturas Condicionais pt 03 - Operador ternário
+- [X] Estruturas Condicionais pt 04 - Tabela Verdade e exercício
+- [X] Estruturas Condicionais pt 05 - Resolução do exercícios
+- [X] Estruturas Condicionais pt 06 - Switch
+- [X] Estruturas Condicionais pt 07 - Switch exercício
+- [X] Estruturas de Repetição pt 01 - Laços de repetição while, do while, for
+- [X] Estruturas de Repetição pt 02 - Exercício for
+- [X] Estruturas de Repetição pt 03 - Break
+- [X] Estruturas de Repetição pt 04 - Exercício Break
+- [X] Estruturas de Repetição pt 05 - Continue
+- [X] Arrays pt 01
+- [X] Arrays pt 02
+- [X] Arrays pt 03
+- [X] Arrays pt 04 - Foreach
 - [ ] Arrays Multidimensionais pt 01
 - [ ] Arrays Multidimensionais pt 02 - Foreach
 - [ ] Arrays Multidimensionais pt 03 - Inicialização
