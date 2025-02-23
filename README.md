@@ -107,9 +107,9 @@ Materiais de estudo sobre DevOps.
 - [X] Estruturas Condicionais pt 06 - Switch
 - [X] Estruturas Condicionais pt 07 - Switch exercício
 - [X] Estruturas de Repetição pt 01 - Laços de repetição while, do while, for
-- [ ] Estruturas de Repetição pt 02 - Exercício for
-- [ ] Estruturas de Repetição pt 03 - Break
-- [ ] Estruturas de Repetição pt 04 - Exercício Break
+- [X] Estruturas de Repetição pt 02 - Exercício for
+- [X] Estruturas de Repetição pt 03 - Break
+- [X] Estruturas de Repetição pt 04 - Exercício Break
 - [ ] Estruturas de Repetição pt 05 - Continue
 - [ ] Arrays pt 01
 - [ ] Arrays pt 02
