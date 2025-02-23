@@ -110,7 +110,7 @@ Materiais de estudo sobre DevOps.
 - [X] Estruturas de Repetição pt 02 - Exercício for
 - [X] Estruturas de Repetição pt 03 - Break
 - [X] Estruturas de Repetição pt 04 - Exercício Break
-- [ ] Estruturas de Repetição pt 05 - Continue
+- [X] Estruturas de Repetição pt 05 - Continue
 - [ ] Arrays pt 01
 - [ ] Arrays pt 02
 - [ ] Arrays pt 03
