@@ -115,7 +115,7 @@ Materiais de estudo sobre DevOps.
 - [X] Arrays pt 02
 - [X] Arrays pt 03
 - [X] Arrays pt 04 - Foreach
-- [ ] Arrays Multidimensionais pt 01
+- [X] Arrays Multidimensionais pt 01
 - [ ] Arrays Multidimensionais pt 02 - Foreach
 - [ ] Arrays Multidimensionais pt 03 - Inicialização
 - [ ] Orientação Objetos pt 01 - Introdução classes pt 01
